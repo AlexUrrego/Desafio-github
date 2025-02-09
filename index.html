@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Alex Urrego, desarrollador web con experiencia en HTML, CSS, Bootstrap y más."
+    />
+    <meta
+      name="keywords"
+      content="desarrollo web, portafolio, HTML, CSS, Bootstrap, proyectos"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +24,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Alex Urrego</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
@@ -25,18 +32,51 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="assets/css/estilos.css" />
+    <title>Alex Urrego - Portafolio</title>
   </head>
-
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" class="img-fluid" />
+          <svg viewBox="0 0 300 80" style="width: 250px">
+            <!-- Logo más grande -->
+            <text
+              x="10"
+              y="45"
+              font-family="Arial"
+              font-weight="bold"
+              font-size="32"
+              fill="#333"
+            >
+              ALEX
+            </text>
+            <line
+              x1="85"
+              y1="15"
+              x2="85"
+              y2="55"
+              stroke="#3498db"
+              stroke-width="3"
+            />
+            <text
+              x="100"
+              y="45"
+              font-family="Arial"
+              font-weight="bold"
+              font-size="32"
+              fill="#3498db"
+            >
+              URREGO
+            </text>
+            <rect x="10" y="55" width="40" height="3" fill="#3498db" />
+          </svg>
         </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -46,46 +86,40 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
-              <a class="nav-link" href="#">Acerca de mi</a>
+              <a class="nav-link" href="#Acerca-de-mi">Acerca de mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trabajos</a>
+              <a class="nav-link" href="#Mis-trabajos">Trabajos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#Contacto">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Hero Section -->
     <header id="Hero-Section" class="text-light text-end py-5 mt-5">
       <div class="container">
         <div class="ms-auto col-12 col-md-7">
           <h1 class="display-1 fw-bold my-5">
-            Desafio Latam <br />
-            proyecto Github
+            Desafío Latam<br />Proyecto GitHub
           </h1>
           <p class="my-5">
-            Desafio portafolio utilizando HTML, CSS y Bootstrap, combinando
+            Desafío portafolio utilizando HTML, CSS y Bootstrap, combinando
             estructura, estilo y diseño responsivo para lograr una interfaz
             atractiva y funcional. Además, gestionado con Git, permitiéndome
             llevar un control de versiones y desplegando mi trabajo de manera
             eficiente.
           </p>
-          <div class="mb-5 pb-5">
-            <button class="btn btn-lg btn-outline-info text-light me-4">
-              Trabajos
-            </button>
-            <button class="btn btn-lg btn-info text-light">Contacto</button>
-          </div>
         </div>
       </div>
     </header>
 
+    <!-- Acerca de mí -->
     <section id="Acerca-de-mi" class="container text-center my-5">
-      <h2 class="display-3 fw-bold my-4">Acerca de mi</h2>
-
+      <h2 class="display-3 fw-bold my-4">Acerca de mí</h2>
       <p class="my-4">
         Tengo conocimientos en HTML, CSS, Bootstrap, PHP y Python, lo que me
         permite crear sitios web dinámicos, responsivos y funcionales. Me
@@ -93,11 +127,10 @@
         constantemente. Siempre busco desarrollar soluciones eficientes,
         optimizadas y atractivas, combinando diseño y funcionalidad para ofrecer
         la mejor experiencia de usuario.<br />
-        📌 Mi enfoque: Desarrolloweb, programación backend, frontend y diseño
+        📌 Mi enfoque: Desarrollo web, programación backend, frontend y diseño
         responsivo.<br />
-        📌 Herramientas clave:GitHub,frameworks y metodologías ágiles.
+        📌 Herramientas clave: GitHub, frameworks y metodologías ágiles.
       </p>
-
       <div class="row">
         <div class="col-12 col-md-4">
           <i class="fas fa-utensils fa-3x my-3"></i>
@@ -105,9 +138,7 @@
           <p class="my-3">
             Disfruto explorar nuevos sabores y experimentar en la cocina. Para
             mí, cada receta es una oportunidad de creatividad, combinando
-            ingredientes para crear platos deliciosos. Cocinar no solo es una
-            forma de alimentar el cuerpo, sino también un arte que llena de
-            alegría a quienes lo disfrutan.
+            ingredientes para crear platos deliciosos.
           </p>
         </div>
         <div class="col-12 col-md-4">
@@ -116,44 +147,39 @@
           <p class="my-3">
             Sumergirme en un buen libro es una de mis actividades favoritas. La
             lectura me transporta a otros mundos, me permite aprender cosas
-            nuevas y me ayuda a ver la vida desde diferentes perspectivas. Cada
-            historia es una aventura que me inspira y me motiva a seguir
-            explorando el conocimiento.
+            nuevas y me ayuda a ver la vida desde diferentes perspectivas.
           </p>
         </div>
         <div class="col-12 col-md-4">
           <i class="fas fa-film fa-3x my-3"></i>
-          <h3 class="my-3 fw-bold">peliculas</h3>
+          <h3 class="my-3 fw-bold">Películas</h3>
           <p class="my-3">
             El cine es una de mis mayores pasiones. Me encanta descubrir
             historias fascinantes, emocionarme con cada escena y analizar los
-            detalles detrás de cada producción. Desde clásicos hasta estrenos,
-            cada película es una experiencia única que despierta emociones y
-            deja huella.
+            detalles detrás de cada producción.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="Mis-trabajos" class="my-5 p-5 bg-info">
+    <!-- Mis trabajos -->
+    <section id="Mis-trabajos" class="my-5 p-5 bg-dark text-light">
       <h2 class="display-4 fw-bold text-center text-light mb-3">
         Mis proyectos
       </h2>
-
       <div class="row">
         <div class="col-12 col-sm-4 py-2">
-          <div class="card">
+          <div class="card text-dark">
             <div
               class="image-top"
               style="background-image: url(assets/img/card-1.jpg)"
             ></div>
             <div class="card-body">
-              <h5 class="card-title fw-bold">Asado en la Patagonia</h5>
+              <h5 class="card-title fw-bold">Proyecto utilizando CSS</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Explicabo iure sint, perspiciatis distinctio molestias nihil
-                repudiandae neque rem adipisci repellendus libero illo quo
-                blanditiis, velit quasi ad, recusandae voluptates officia.
+                Proyecto utilizando hojas de estilos CSS. Esta página web está
+                diseñada para mostrar los sitios turísticos más impresionantes
+                de Colombia.
               </p>
               <button type="button" class="btn btn-outline-info">
                 Ver más
@@ -162,18 +188,17 @@
           </div>
         </div>
         <div class="col-12 col-sm-4 py-2">
-          <div class="card">
+          <div class="card text-dark">
             <div
               class="image-top"
               style="background-image: url(assets/img/card-2.jpg)"
             ></div>
             <div class="card-body">
-              <h5 class="card-title fw-bold">Papas del fin del mundo</h5>
+              <h5 class="card-title fw-bold">Proyecto utilizando Flexbox</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Deserunt a culpa doloremque voluptatem dicta nam. Maxime ipsum,
-                consequatur quos error fuga excepturi quo. Laudantium optio
-                pariatur laboriosam modi, ea molestias?
+                Este proyecto sobre iguanas utiliza HTML y CSS con el modelo de
+                diseño CSS Flexbox para estructurar el contenido de forma
+                organizada y responsiva.
               </p>
               <button type="button" class="btn btn-outline-info">
                 Ver más
@@ -182,18 +207,17 @@
           </div>
         </div>
         <div class="col-12 col-sm-4 py-2">
-          <div class="card">
+          <div class="card text-dark">
             <div
               class="image-top"
               style="background-image: url(assets/img/card-3.jpg)"
             ></div>
             <div class="card-body">
-              <h5 class="card-title fw-bold">Salmones de Alaska</h5>
+              <h5 class="card-title fw-bold">Proyecto utilizando Bootstrap</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Obcaecati facere quibusdam sint id laborum magni velit ducimus
-                corporis facilis qui architecto dolor, accusamus eveniet
-                exercitationem fugit. Quod autem neque ducimus.
+                Esta página de cupones utiliza HTML, CSS y Bootstrap para un
+                diseño limpio y responsivo. Presenta una cuadrícula de ofertas
+                bien organizada.
               </p>
               <button type="button" class="btn btn-outline-info">
                 Ver más
@@ -204,45 +228,43 @@
       </div>
     </section>
 
+    <!-- Contacto -->
     <section id="Contacto" class="container my-5">
       <h2 class="display-4 fw-bold text-center my-4">Contáctame</h2>
-
-      <p class="text-center my-4 d-none d-md-block">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-        sapiente, autem delectus totam expedita animi corporis dolorem qui
-        magnam, aspernatur officiis quasi culpa tempora est commodi. Voluptate
-        beatae tempora quaerat?
-      </p>
-
-      <form>
+      <form action="#" method="POST">
         <div class="form-group mb-4">
           <label class="mb-2">Nombre</label>
-          <input class="form-control" placeholder="Nombre" />
+          <input class="form-control" placeholder="Nombre" required />
         </div>
-
         <div class="form-group mb-4">
           <label class="mb-2">Correo electrónico</label>
-          <input class="form-control" placeholder="Correo electrónico" />
+          <input
+            class="form-control"
+            type="email"
+            placeholder="Correo electrónico"
+            required
+          />
         </div>
-
         <div class="form-group">
           <label class="mb-2">Mensaje</label>
           <textarea
             class="form-control"
             placeholder="Escribe aquí tu mensaje"
+            required
           ></textarea>
         </div>
-
         <div class="my-3 text-end">
-          <button class="btn btn-info text-light">Enviar</button>
+          <button type="submit" class="btn btn-info text-light">Enviar</button>
         </div>
       </form>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-dark text-center text-light p-4">
       <p class="mb-0">Alex Urrego 2025. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
